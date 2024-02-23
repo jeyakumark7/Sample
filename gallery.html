@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <h1>My Projects</h1>
+        <div class="image-container">
+            <figure>
+                <img src="images/techno.jpg" alt="Image 1">
+                    <h3>RECHARGE MANAGEMENT</h3>
+                    <p>VIRTUSA CORPORATION | .NET FULLSTACK INTERNSHIP</p>
+                <figcaption>
+                    Key responsibilities:
+                    <ul>
+                        <li>Collaborated with a cross-functional team to develop and maintain .NET-based web applications, contributing to the successful delivery of project called Recharge Management.</li>
+                        <li>Developed responsive and intuitive user interfaces using front-end technologies such as HTML, CSS, and JavaScript, ensuring a seamless user experience.</li>
+                        <li>Utilized database technologies (e.g., SQL Server) to design and maintain databases, ensuring data integrity and efficient query performance.</li>
+                    </ul>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/tec.jpg" alt="Image 2">
+                
+                    <h3>FOOD DELIVERY WEBSITE</h3>
+                    <p>SKILL VERTEX | INTERNSHIP</p>
+                <figcaption>
+                    Key responsibilities:
+                    <ul>
+                        <li>Utilized front-end technologies, including HTML, CSS, and JavaScript, to implement user interfaces and enhance website interactivity.</li>
+                        <li>Worked closely with the development team to create and maintain responsive and visually appealing websites, incorporating modern design principles.</li>
+                        <li>Participated in the planning and execution of website development projects, collaborating with team members to ensure timely delivery and adherence to project requirements.</li>
+                    </ul>
+                </figcaption>
+            </figure>
+            <!-- Add more images with descriptions as needed -->
+        </div>
+    </div>
+    <style>
+        .gallery-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #080808;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+figure:hover {
+    transform: translateY(-5px);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #070808;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    padding: 10px;
+    background-color: rgba(5, 206, 217, 0.8);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+figure:hover figcaption {
+    transform: translateY(0);
+}
+
+    </style>
+</body>
+</html>

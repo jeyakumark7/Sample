@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <style>
+        /* About Section Styles */
+#abtme {
+  background-color: #fdd319;
+  padding: 100px 0;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.title1{
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.abt-info-list{
+  text-align: center;
+  background-color: #f80ab9;
+  color: white;
+}
+
+.profile-img {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 50px;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  width: 500%; /* Adjust width based on the number of images */
+  animation: slide 10s linear infinite;
+}
+
+.slider img {
+  flex: 1;
+  min-width: 20%; /* Adjust based on the number of images */
+  height: auto;
+}
+
+.bio {
+  max-width: 500px;
+}
+
+.bio h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #070707;
+}
+
+.bio p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+    </style>
+</head>
+<body>
+    <section id="abtme">
+        <div class="container">
+          <h2 class="title">JK Profile</h2>
+          <div class="about-content">
+            <div class="profile-img">
+              <div class="slider">
+                <img src="C:\Users\Jeyakumar K\OneDrive\Desktop\My site\images\tec.jpg" alt="Profile Picture 1">
+                <img src="C:\Users\Jeyakumar K\OneDrive\Desktop\My site\images\techie.jpg" alt="Profile Picture 2">
+                <img src="C:\Users\Jeyakumar K\OneDrive\Desktop\My site\images\teco.jpg" alt="Profile Picture 3">
+                <img src="C:\Users\Jeyakumar K\OneDrive\Desktop\My site\images\img1.jpg" alt="Profile Picture 3">
+                <img src="C:\Users\Jeyakumar K\OneDrive\Desktop\My site\images\img2.jpg" alt="Profile Picture 3">
+                <!-- Add more images as needed -->
+              </div>
+              <!--<img src="C:\Users\Jeyakumar K\OneDrive\Pictures\tec.jpg" alt="Profile Picture">-->
+            </div>
+            <div class="bio">
+              <h3>Hi, I'm Jeyakumar K</h3>
+              <p>I'm a passionate web developer with a focus on creating beautiful and user-friendly websites. I love to code and constantly strive to learn new technologies.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="#intro" onclick="loadPage('intro.html')">Introduction</a></li>
+            <li><a href="#education" onclick="loadPage('education.html')">Education</a></li>
+            <li><a href="#gallery" onclick="loadPage('gallery.html')">Gallery</a></li>
+            <li><a href="#favorites" onclick="loadPage('favorite.html')">Favorites</a></li>
+            <li><a href="#feedback" onclick="loadPage('feedback.html')">Feedback</a></li>
+        </ul>
+    </nav>
+    <iframe name="iframe_content" frameborder="0" width="100%" height="600"></iframe>
+
+    <script>
+        function loadPage(page) {
+            document.querySelector('iframe').src = page;
+            if (page === ' ') {
+                document.querySelector('.main-content').style.display = 'block';
+            } else {
+                document.querySelector('.main-content').style.display = 'none';
+            }
+        }
+    </script>
+
+    <div class="main-content">
+        <h2>Welcome to My Project</h2>
+        <p>This is the main page content. You can add any introductory information or other content here.</p>
+    </div>
+
+    <footer>
+        <div class="container">
+          <div class="footer-content">
+            <p>&copy; 2024 Jeyakumar. All rights reserved.</p>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/jeyakumar-k-431996235" target=""><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/your-instagram-profile" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+    </footer>
+</body>
+</html>

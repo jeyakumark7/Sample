@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="education.css">
+</head>
+<body>
+    <div class="education-container">
+        <h1>My Education</h1>
+        <table>
+            <tr>
+                <th>Bachelor Degree</th>
+                <th>Institution</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>Computer Science and Engineering</td>
+                <td>V.S.B College of Engineering Technical Campus Coimbatore</td>
+                <td>2019-2023</td>
+            </tr>
+
+            <tr>
+                <th>Board</th>
+                <th>School</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>HSC - Maths computer</td>
+                <td>U.S.P Matriculation Higher Secondary School Tenkasi</td>
+                <td>2018-2019</td>
+            </tr>
+            <tr>
+                <td>SSLC</td>
+                <td>SR Matriculation Higher Secondary School Tenkasi</td>
+                <td>2016-2017</td>
+            </tr>
+        </table>
+        <div class="resume-container">
+            <a href="D:\Jeyakumar\JEYAKUMAR.K-RESUME.pdf" download="D:\Jeyakumar\JEYAKUMAR.K-RESUME.pdf" class="resume-link">Download Resume</a>
+        </div>
+    </div>
+    <style>
+        .education-container {
+            text-align: center;
+            padding: 50px;
+        }
+
+        table {
+            margin-top: 30px;
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid #060606;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #f5630f;
+        }
+
+        .resume-container {
+            margin-top: 30px;
+        }
+
+        .resume-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .resume-link:hover {
+            transform: scale(1.1);
+        }
+
+        /* Animation */
+        .education-container h1,
+        table,
+        .resume-container {
+            animation: slideIn 1s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+     <script>
+        // Automatically trigger the download when the page loads
+        window.onload = function() {
+            var downloadLink = document.getElementById('download-link');
+            downloadLink.click();
+        };
+    </script>
+</body>
+</html>
